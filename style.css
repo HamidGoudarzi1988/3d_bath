@@ -1,0 +1,19 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:sans-serif;
+    overflow:hidden;
+    background: grey;
+ 
+}
+.scene,
+canvas{
+    margin-top: 10px;
+    position:absolute;
+    width:100%;
+    height:100%;
+    }
