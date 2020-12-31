@@ -32,6 +32,9 @@ function init(){
     camera.position.set(-40,50,400);
 
 
+    
+
+
     // we need light for showing the item otherwise it is dark
 
     const ambient = new THREE.AmbientLight(0x404040,3);
@@ -62,14 +65,16 @@ function init(){
         
         
     })
-
+//controls
+    let controls = new THREE.OrbitControls(camera, renderer.domElement);
+    controls.addEventListener('change', renderer);
 
 }
 
 // add animation to rotate the item:
 function animate(){
     requestAnimationFrame(animate);
-    bath.rotation.z +=0.005;
+    // bath.rotation.z +=0.005;
     renderer.render(scene,camera);
 }
 
